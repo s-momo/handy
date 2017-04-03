@@ -1,0 +1,47 @@
+C:\Users\momo\AppData\Local\Temporary Projects\handy\bin\Release\handy.exe
+C:\Users\momo\AppData\Local\Temporary Projects\handy\bin\Release\handy.pdb
+C:\Users\momo\AppData\Local\Temporary Projects\handy\bin\Release\handy.xml
+C:\Users\momo\AppData\Local\Temporary Projects\handy\obj\Release\ResolveAssemblyReference.cache
+C:\Users\momo\AppData\Local\Temporary Projects\handy\obj\Release\handy.LoginForm.resources
+C:\Users\momo\AppData\Local\Temporary Projects\handy\obj\Release\handy.Resources.resources
+C:\Users\momo\AppData\Local\Temporary Projects\handy\obj\Release\handy.vbproj.GenerateResource.Cache
+C:\Users\momo\AppData\Local\Temporary Projects\handy\obj\Release\handy.exe
+C:\Users\momo\AppData\Local\Temporary Projects\handy\obj\Release\handy.xml
+C:\Users\momo\AppData\Local\Temporary Projects\handy\obj\Release\handy.pdb
+C:\work\keyence\handy\handy\bin\Release\handy.exe
+C:\work\keyence\handy\handy\bin\Release\handy.pdb
+C:\work\keyence\handy\handy\bin\Release\handy.xml
+C:\work\keyence\handy\handy\obj\Release\ResolveAssemblyReference.cache
+C:\work\keyence\handy\handy\obj\Release\handy.LoginForm.resources
+C:\work\keyence\handy\handy\obj\Release\handy.menuForm.resources
+C:\work\keyence\handy\handy\obj\Release\handy.Resources.resources
+C:\work\keyence\handy\handy\obj\Release\handy.shopForm.resources
+C:\work\keyence\handy\handy\obj\Release\handy.vbproj.GenerateResource.Cache
+C:\work\keyence\handy\handy\obj\Release\handy.exe
+C:\work\keyence\handy\handy\obj\Release\handy.xml
+C:\work\keyence\handy\handy\obj\Release\handy.pdb
+C:\work\keyence\handy\handy\obj\Release\handy.CodeForm.resources
+C:\work\keyence\handy\handy\obj\Release\handy.CompForm.resources
+C:\work\keyence\handy\handy\obj\Release\handy.DayForm.resources
+C:\work\keyence\handy\handy\obj\Release\handy.IncompleteForm.resources
+C:\work\keyence\handy\handy\obj\Release\handy.ItemForm.resources
+C:\work\keyence\handy\handy\obj\Release\handy.LocaItemForm.resources
+C:\work\keyence\handy\handy\obj\Release\handy.LocaMotoForm.resources
+C:\work\keyence\handy\handy\obj\Release\handy.LocaSakiForm.resources
+C:\work\keyence\handy\handy\obj\Release\handy.NewLocaForm.resources
+C:\work\keyence\handy\handy\obj\Release\handy.ResultForm.resources
+C:\work\keyence\handy\handy\obj\Release\handy.LocaStockForm.resources
+C:\work\keyence\handy\handy\obj\Release\handy.ScanItemForm.resources
+C:\work\keyence\handy\handy\obj\Release\handy.StockItemForm.resources
+C:\work\keyence\handy\handy\obj\Release\handy.StockMenuForm.resources
+C:\work\keyence\handy\handy\obj\Release\handy.ReturnedGoodsForm.resources
+C:\work\keyence\handy\handy\bin\Release\Newtonsoft.Json.Compact.dll
+C:\work\keyence\handy\handy\bin\Release\Newtonsoft.Json.Compact.pdb
+C:\work\keyence\handy\handy\bin\Release\Newtonsoft.Json.Compact.xml
+C:\work\keyence\handy\handy\obj\Release\handy.NyuukaCode.resources
+C:\work\keyence\handy\handy\obj\Release\handy.popUp.resources
+C:\work\keyence\handy\handy\obj\Release\handy.LocaItemList.resources
+C:\work\keyence\handy\handy\bin\Release\btLibDefNet.dll
+C:\work\keyence\handy\handy\bin\Release\btScanLibNet.dll
+C:\work\keyence\handy\handy\bin\Release\btSysLibNet.dll
+C:\work\keyence\handy\handy\obj\Release\handy.NyuukoItem.resources

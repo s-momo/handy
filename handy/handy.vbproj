@@ -1,0 +1,364 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E2C0DED1-1D3A-4E65-A380-B5587B7FC6DE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>handy.menuForm</StartupObject>
+    <RootNamespace>handy</RootNamespace>
+    <AssemblyName>handy</AssemblyName>
+    <ProjectTypeGuids>{68B1623D-7FB9-47D8-8664-7ECEA3297D4F};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <PlatformFamilyName>WindowsCE</PlatformFamilyName>
+    <PlatformID>E2BECB1F-8C8C-41ba-B736-9BE7D946A398</PlatformID>
+    <OSVersion>5.0</OSVersion>
+    <MyType>WindowsForms</MyType>
+    <DeployDirSuffix>handy</DeployDirSuffix>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <NativePlatformName>Windows CE</NativePlatformName>
+    <FormFactorID>
+    </FormFactorID>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>$(PlatformFamilyName)=TRUE</DefineConstants>
+    <DocumentationFile>handy.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <FileAlignment>512</FileAlignment>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>$(PlatformFamilyName)=TRUE</DefineConstants>
+    <DocumentationFile>handy.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <FileAlignment>512</FileAlignment>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="btLibDefNet, Version=1.5.0.4, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Program Files (x86)\Windows CE Tools\SDKs\BT-W SDK-HT\Lib\ARMv4I\btLibDefNet.dll</HintPath>
+    </Reference>
+    <Reference Include="btScanLibNet, Version=1.5.0.3, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Program Files (x86)\Windows CE Tools\SDKs\BT-W SDK-HT\Lib\ARMv4I\btScanLibNet.dll</HintPath>
+    </Reference>
+    <Reference Include="btSysLibNet, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Program Files (x86)\Windows CE Tools\SDKs\BT-W SDK-HT\Lib\ARMv4I\btSysLibNet.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Windowsce.Forms" />
+    <Reference Include="Newtonsoft.Json.Compact, Version=3.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\json\Bin\Compact\Newtonsoft.Json.Compact.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Data" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApiAccess.vb" />
+    <Compile Include="ApiConfig.vb" />
+    <Compile Include="ApiControlClass.vb" />
+    <Compile Include="CodeForm.Designer.vb">
+      <DependentUpon>CodeForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CodeForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CompForm.Designer.vb">
+      <DependentUpon>CompForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CompForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DayForm.Designer.vb">
+      <DependentUpon>DayForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DayForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IncompleteForm.Designer.vb">
+      <DependentUpon>IncompleteForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IncompleteForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Items.vb" />
+    <Compile Include="itemCount.vb" />
+    <Compile Include="ItemForm.Designer.vb">
+      <DependentUpon>ItemForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ItemForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="jsonSerialize.vb" />
+    <Compile Include="JsonParse.vb" />
+    <Compile Include="LocaItemForm.Designer.vb">
+      <DependentUpon>LocaItemForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LocaItemForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LocaItemList.Designer.vb">
+      <DependentUpon>LocaItemList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LocaItemList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LocaSakiForm.Designer.vb">
+      <DependentUpon>LocaSakiForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LocaSakiForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.vb">
+      <DependentUpon>LoginForm.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LocaMotoForm.Designer.vb">
+      <DependentUpon>LocaMotoForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LocaMotoForm.vb">
+      <SubType>Form</SubType>
+      <Generator>n</Generator>
+    </Compile>
+    <Compile Include="main_md.vb" />
+    <Compile Include="MenuForm.Designer.vb">
+      <DependentUpon>MenuForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MsgWindowClass.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="MyPolicy.vb" />
+    <Compile Include="NewLocaForm.Designer.vb">
+      <DependentUpon>NewLocaForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NewLocaForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NyuukaCode.Designer.vb">
+      <DependentUpon>NyuukaCode.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NyuukaCode.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NyuukoItem.Designer.vb">
+      <DependentUpon>NyuukoItem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NyuukoItem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="popUp.Designer.vb">
+      <DependentUpon>popUp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="popUp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="popUpClass.vb" />
+    <Compile Include="printPictureBox.vb" />
+    <Compile Include="ResultForm.Designer.vb">
+      <DependentUpon>ResultForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ResultForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LocaStockForm.Designer.vb">
+      <DependentUpon>LocaStockForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LocaStockForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReturnedGoodsForm.Designer.vb">
+      <DependentUpon>ReturnedGoodsForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReturnedGoodsForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScanItemForm.Designer.vb">
+      <DependentUpon>ScanItemForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ScanItemForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShipmentClass.vb" />
+    <Compile Include="shopClass.vb" />
+    <Compile Include="ShopForm.Designer.vb">
+      <DependentUpon>ShopForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ShopForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="statsModule.vb" />
+    <Compile Include="stockItemClass.vb" />
+    <Compile Include="StockItemForm.Designer.vb">
+      <DependentUpon>StockItemForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StockItemForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockMenuForm.Designer.vb">
+      <DependentUpon>StockMenuForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StockMenuForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TextBoxImeClass.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CodeForm.resx">
+      <DependentUpon>CodeForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CompForm.resx">
+      <DependentUpon>CompForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DayForm.resx">
+      <DependentUpon>DayForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IncompleteForm.resx">
+      <DependentUpon>IncompleteForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ItemForm.resx">
+      <DependentUpon>ItemForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocaItemForm.resx">
+      <DependentUpon>LocaItemForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocaItemList.resx">
+      <DependentUpon>LocaItemList.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocaMotoForm.resx">
+      <DependentUpon>LocaMotoForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocaSakiForm.resx">
+      <DependentUpon>LocaSakiForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm.resx">
+      <DependentUpon>MenuForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewLocaForm.resx">
+      <DependentUpon>NewLocaForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NyuukaCode.resx">
+      <DependentUpon>NyuukaCode.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NyuukoItem.resx">
+      <DependentUpon>NyuukoItem.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="popUp.resx">
+      <DependentUpon>popUp.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResultForm.resx">
+      <DependentUpon>ResultForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocaStockForm.resx">
+      <DependentUpon>LocaStockForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReturnedGoodsForm.resx">
+      <DependentUpon>ReturnedGoodsForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScanItemForm.resx">
+      <DependentUpon>ScanItemForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShopForm.resx">
+      <DependentUpon>ShopForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockItemForm.resx">
+      <DependentUpon>StockItemForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockMenuForm.resx">
+      <DependentUpon>StockMenuForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CompactFramework.VisualBasic.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{F184B08F-C81C-45F6-A57F-5ABD9991F28F}">
+        <HostingProcess disable="1" />
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
